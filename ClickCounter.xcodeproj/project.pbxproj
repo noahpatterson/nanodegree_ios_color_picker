@@ -12,6 +12,7 @@
 		5A608C9C1D3110FA00FD3F22 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A608C9A1D3110FA00FD3F22 /* Main.storyboard */; };
 		5A608C9E1D3110FA00FD3F22 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A608C9D1D3110FA00FD3F22 /* Assets.xcassets */; };
 		5A608CA11D3110FA00FD3F22 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A608C9F1D3110FA00FD3F22 /* LaunchScreen.storyboard */; };
+		5ADF2FDC1D33318100FC68A0 /* ColorMakerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ADF2FDB1D33318100FC68A0 /* ColorMakerViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		5A608C9D1D3110FA00FD3F22 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5A608CA01D3110FA00FD3F22 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5A608CA21D3110FA00FD3F22 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5ADF2FDB1D33318100FC68A0 /* ColorMakerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorMakerViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 				5A608C9D1D3110FA00FD3F22 /* Assets.xcassets */,
 				5A608C9F1D3110FA00FD3F22 /* LaunchScreen.storyboard */,
 				5A608CA21D3110FA00FD3F22 /* Info.plist */,
+				5ADF2FDB1D33318100FC68A0 /* ColorMakerViewController.swift */,
 			);
 			path = ClickCounter;
 			sourceTree = "<group>";
@@ -137,6 +140,7 @@
 			files = (
 				5A608C991D3110FA00FD3F22 /* ViewController.swift in Sources */,
 				5A608C971D3110FA00FD3F22 /* AppDelegate.swift in Sources */,
+				5ADF2FDC1D33318100FC68A0 /* ColorMakerViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,6 +292,7 @@
 				5A608CA71D3110FA00FD3F22 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
