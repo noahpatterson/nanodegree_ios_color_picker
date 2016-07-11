@@ -36,10 +36,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ter-Jq-KhT">
-                                <rect key="frame" x="180" y="306" width="240" height="128"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            </view>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ddU-xQ-6AE">
                                 <rect key="frame" x="276" y="87" width="51" height="31"/>
                                 <color key="onTintColor" red="1" green="0.6852542786744249" blue="0.65440518967767314" alpha="1" colorSpace="calibratedRGB"/>
@@ -64,14 +60,42 @@
                                     <action selector="changeColorComponent:" destination="fDB-wg-ny3" eventType="valueChanged" id="Y3k-xV-2zn"/>
                                 </connections>
                             </switch>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ter-Jq-KhT">
+                                <rect key="frame" x="180" y="306" width="240" height="128"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="rwB-To-D1f">
+                                <rect key="frame" x="241" y="115" width="118" height="31"/>
+                                <color key="thumbTintColor" red="1" green="0.03014979596" blue="0.080433953330000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="changeColorWithSlider:" destination="fDB-wg-ny3" eventType="valueChanged" id="XJD-Bk-csm"/>
+                                </connections>
+                            </slider>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="mef-Ze-w8T">
+                                <rect key="frame" x="241" y="197" width="118" height="31"/>
+                                <color key="thumbTintColor" red="0.181152008" green="0.80628272249999999" blue="0.1196222488" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="changeColorWithSlider:" destination="fDB-wg-ny3" eventType="valueChanged" id="qG3-go-01x"/>
+                                </connections>
+                            </slider>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="9pg-qn-XJk">
+                                <rect key="frame" x="241" y="268" width="118" height="31"/>
+                                <color key="thumbTintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="changeColorWithSlider:" destination="fDB-wg-ny3" eventType="valueChanged" id="YYg-fi-pcm"/>
+                                </connections>
+                            </slider>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" id="Hyj-TD-HKK"/>
                     <connections>
+                        <outlet property="blueSlider" destination="9pg-qn-XJk" id="YQW-2f-iij"/>
                         <outlet property="blueSwitch" destination="6gB-BC-Vvm" id="Xa7-v7-eNk"/>
                         <outlet property="colorView" destination="ter-Jq-KhT" id="74g-MM-JcX"/>
+                        <outlet property="greenSlider" destination="mef-Ze-w8T" id="qUL-6P-PBq"/>
                         <outlet property="greenSwitch" destination="RFQ-RG-Cr3" id="05G-Xv-GFI"/>
+                        <outlet property="redSlider" destination="rwB-To-D1f" id="2By-hc-s9S"/>
                         <outlet property="redSwitch" destination="ddU-xQ-6AE" id="hSU-t3-fsW"/>
                     </connections>
                 </viewController>
